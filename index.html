@@ -13,7 +13,7 @@
      widget itself, it's just here to show it sitting on an ordinary
      light page, the way it would inside your site. */
   html, body { margin: 0; padding: 0; background: #141414; font-family: 'Outfit', sans-serif; }
-  .page-shell { min-height: 100vh; display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 20px; padding: 40px 16px; }
+  .page-shell { height: 100vh; min-height: 0; box-sizing: border-box; overflow: hidden;  display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 20px; padding: 40px 16px; }
   .page-shell h1 { color: #ffffff; font-weight: 500; font-size: 20px; letter-spacing: 0.02em; margin: 0; }
   .page-shell p.hint { color: #6d675a; font-size: 13px; margin: -8px 0 0; }
 </style>
