@@ -1,0 +1,36 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Sketchbook Flipbook — Demo</title>
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600&display=swap" rel="stylesheet" />
+<link rel="stylesheet" href="flipbook.css" />
+<style>
+  /* Page chrome around the widget — none of this is required by the
+     widget itself, it's just here to show it sitting on an ordinary
+     light page, the way it would inside your site. */
+  html, body { margin: 0; padding: 0; background: #141414; font-family: 'Outfit', sans-serif; }
+  .page-shell { min-height: 100vh; display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 20px; padding: 40px 16px; }
+  .page-shell h1 { color: #ffffff; font-weight: 500; font-size: 20px; letter-spacing: 0.02em; margin: 0; }
+  .page-shell p.hint { color: #6d675a; font-size: 13px; margin: -8px 0 0; }
+</style>
+</head>
+<body>
+  <div class="page-shell">
+    <h1>Sketchbook 04</h1>
+    <div
+      class="sfb-flipbook"
+      data-pdf="SKETCHOOK-FLIPBOOK-2.1.pdf"
+      data-width="400"
+      data-ratio="1 / 1.375"
+      data-max-height="420"
+    ></div>
+    <p class="hint">Click either side of the page, swipe, or use the ← → keys.</p>
+  </div>
+
+  <script type="module" src="flipbook.js"></script>
+</body>
+</html>
